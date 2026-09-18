@@ -27,7 +27,7 @@ Also, a brief supporting document should be provided (e.g. text or slides with c
 you have done and what you are planning to do by the end of the project.
 The report will be graded in a binary form (passed/failed).
 
-The project defense will be organized in a form of a public presentation of roughly 10-15 minutes per person (group).
+The project defense will be organized in a form of a public presentation of roughly 15-20 minutes per person (group).
 A successfully passed intermediate status report is necessary to be admitted for the project defense.
 You can find some guidelines below for the project.
 
