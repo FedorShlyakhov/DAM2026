@@ -2,16 +2,16 @@
 
 # Exam project guidelines
 
-As mentioned in the [course overview](https://github.com/Majid-Sohrabi/DAM-2025/blob/main/01-intro/DAM-2025-course-overview.pdf),
+As mentioned in the [course overview](https://github.com/FedorShlyakhov/DAM2026/blob/main/01-intro/DAM-2026-course-overview.pdf),
 the exam project is about participating in a competition.
-**Please add your choice to the corresponding table (check the pinned message in our telegram channel)**.
+**Please write me to e-mail to confirm your choice**.
 
 There are 3 main checkpoints for the project:
 |Checkpoint|Deadline|
 |--|--|
-|Topic choice| October 17 |
-|Intermediate status report|November 21|
-|Project defense| December 12 & 13|
+|Topic choice| October 16 |
+|Intermediate status report|November 13|
+|Project defense| December 4 & 11|
 
 - Missing dedline for stage 1, 2 will result in -1 point (for each stage) for the project.
 - Missing the project defense (stage 3) will result in 0 for the whole project.
