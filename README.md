@@ -46,14 +46,64 @@ You can consult the existing solutions, shared kernels, etc. but blind re-use of
 If you are basing (a part of) your solution on someone else’s work, be sure to make a proper reference to
 that work, and also to have a sizable personal contribution on top of that.
 
-Your work will be evaluated against the following criteria:
+## Intermediate status report (November 13): requirements
 
-1. Skills demonstrated. Generally, by solving this task you want to show your skills
-in **data preprocessing**, **feature engineering** and **feature selection**, **model development**,
-**model selection** and **model quality assessment**. You should be able to justify your choices.
-1. Presentation quality. Make sure that your audience understands:
-    1. the problem you were trying to solve,
-    1. what exactly you did, and
-    1. what results you obtained
+The report is graded pass/failed. It passes if everything below is in place.
 
-Getting high ranks on the leaderboard is not required, but it surely will be taken into account when grading if you do get it.
+### Repository
+
+- A GitHub repository with a README: the competition (with a link), the target and the evaluation metric, the team members and their roles.
+- In a team, every member has commits that correspond to their role.
+
+### Work done (at least 50% of the project)
+
+- Data loading and a description of the data: number of rows and columns, feature types, what each feature means.
+- Exploratory data analysis: the distribution of the target, distributions of the main features (histograms for numeric features, bar charts for categorical ones) with short comments, and relations between the main features and the target.
+- Missing values and anomalies: where they are, how many, and how you handle them (drop, fill or flag), with a reason for the choice.
+- Preprocessing: encoding of categorical features, scaling where the model needs it.
+- A validation scheme (hold-out or cross-validation) with the competition metric computed on it.
+- A baseline: a trivial prediction (a constant, the most frequent class or a simple rule) and at least one trained model, both scored on validation.
+- At least one successful submission on Kaggle.
+
+### Supporting document (1–2 pages of text or 3–5 slides)
+
+- What has been done, including the key EDA findings and the current scores (validation and Kaggle).
+- What is planned until the defense, and who will do what.
+
+## Final grading (10 points)
+
+### 1. Problem and data (2 points)
+
+- **0.5:** the task, the target and the metric are explained in plain words, including what the metric rewards.
+- **1:** EDA. Distributions of the target and the features are shown and interpreted, relations with the target are explored, and the findings are stated, not just plotted.
+- **0.5:** missing values, outliers and other data problems are identified.
+
+### 2. Preprocessing and features (2 points)
+
+- **0.5:** missing values are handled and the choice is justified.
+- **0.5:** categorical encoding and scaling are appropriate for the models used.
+- **1:** feature engineering and selection. At least two new features are built (or irrelevant ones are removed), and their effect on the validation score is checked.
+
+### 3. Models (2.5 points)
+
+- **0.5:** a baseline (trivial prediction) to compare against.
+- **1:** at least three different types of models, for example a linear model, a random forest and gradient boosting.
+- **1:** hyperparameters of at least one model are tuned on validation (grid search, random search or similar), and the tuning is described.
+
+### 4. Evaluation and model choice (1.5 points)
+
+- **0.5:** a validation scheme using the competition metric, without leakage (preprocessing is fitted on the training part only).
+- **0.5:** a table comparing all models on the same validation.
+- **0.5:** the final model is chosen for a stated reason. Validation and leaderboard scores are compared and the difference is discussed.
+
+### 5. Presentation (2 points)
+
+- **0.5:** clear structure: problem, data, what was done, results, conclusions.
+- **0.5:** readable slides: plots with labeled axes and readable fonts, results in tables, no screenshots of code and no walls of text.
+- **0.5:** the talk fits into 15–20 minutes, and in a team every member presents their own part.
+- **0.5:** answers to questions show that the speakers understand and can justify their choices.
+
+### Notes
+
+- Code taken from public notebooks without a reference is not graded. With a reference, only your own contribution on top of it is graded.
+- Presenting is a blocking activity, which means that your team have to present to get points for 1-4 Sections!
